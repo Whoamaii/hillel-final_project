@@ -1,0 +1,289 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    &__caption {
+        padding-bottom: 28px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    &__start {
+        padding-bottom: 30px;
+    }
+    &__pic {
+        background: url(../img/about-pic.png) no-repeat center center;
+        width: 375px;
+        height: 115px;
+    }
+    &__cards {
+        border-left: 4px solid $grey-light-2;
+        padding-left: 30px;
+        height: fit-content;
+    }
+    &__text-end {
+        padding: 30px;
+    }
+    &__achiv {
+        background: $grey-light;
+        padding: 60px 0;
+    }
+    &__switcher {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__items {
+        padding-bottom: 30px;
+        border-bottom: 2px solid $grey-light-2;
+    }
+}
+
+.caption {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: $grad;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &-pos-about {
+        padding-left: 8px;
+    }
+    &-pos-padd {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.text {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: $black;
+}
+
+.item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $purple-dark;
+}
+
+.card {
+    padding-bottom: 40px;
+    &-last {
+        padding-bottom: 0;
+    }
+}
+
+.achivments-img {
+    background-color: $white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    & img {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    &-sec {
+        background: $white;
+        border-radius: 12px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        & img {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+    &-third {
+        background: $white;
+        border-radius: 12px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        & img {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+    &-fourth {
+        background: $white;
+        border-radius: 12px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        & img {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+}
+
+.achiv-caption {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $purple-dark;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .about {
+        padding: 60px;
+        &__start {
+            width: 486px;
+        }
+        &__pic {
+            background: url(../img/about-pic-tablet.png) no-repeat center center;
+            width: 768px;
+            height: 234px;
+        }
+        &__text-end {
+            width: 648px;
+            padding-top: 60px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        &__achiv {
+            padding: 30px 0;
+            &-cards {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 30px;
+            }
+        }
+        &__items {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin: 0 30px;
+        }
+        &__switcher {
+            padding-bottom: 30px;
+            border-bottom: 2px solid $grey-light-2;
+        }
+    }
+
+    .caption {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .tabl-non {
+        display: none;
+    }
+
+    .caption-pos-padd {
+        padding-bottom: 60px;
+    }
+    .achivments-img {
+        margin-bottom: 0;
+        & img {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        &-sec {
+            display: flex;
+            & img {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+        }
+        &-third {
+            display: flex;
+        }
+        &-fourth {
+            display: flex;
+            & img {
+                padding-left: 11px;
+                padding-right: 11px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .about {
+        flex-direction: row;
+        padding: 60px;
+        &__start {
+            margin-right: 30px;
+        }
+        &__pic {
+            background: url(../img/about-pic-desktop.png) no-repeat center
+                center;
+            background-size: cover;
+            width: 100%;
+            height: 311px;
+        }
+        &__text-end {
+            display: flex;
+            width: auto;
+            padding: 60px;
+        }
+        &__achiv-cards {
+            padding: 0 70px 30px 70px;
+        }
+        &__cards {
+            width: 354px;
+        }
+        &__cards-wrap {
+            width: 25%;
+            margin: 0 -40px;
+        }
+        &__items {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin: 0;
+        }
+        &__switcher {
+            padding-bottom: 30px;
+            border-bottom: 2px solid $grey-light-2;
+            margin: 0 30px;
+        }
+    }
+
+    .text-end-desktop {
+        width: 658px;
+    }
+
+    .caption-pos-padd {
+        padding: 0 0 0 60px;
+    }
+    .achivments-img {
+        & img {
+            padding: 25px 110px;
+        }
+        &-sec {
+            & img {
+                padding: 25px 70px;
+            }
+        }
+        &-third {
+            & img {
+                padding: 25px 53px;
+            }
+        }
+        &-fourth {
+            & img {
+                padding: 25px 67px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .about {
+        &__pic {
+            height: 438px;
+        }
+    }
+}
