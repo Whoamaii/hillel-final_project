@@ -75,6 +75,10 @@
         border: none;
         margin-bottom: 30px;
         cursor: pointer;
+        transition: all 1.5s linear;
+        &:hover {
+            transform: scale(1.08);
+        }
     }
 }
 

@@ -1016,6 +1016,13 @@
   margin-left: auto;
   margin-bottom: 60px;
   padding: 0;
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+}
+
+.first-menu__scroll-btn:hover {
+  -webkit-transform: translate(0, -25px);
+          transform: translate(0, -25px);
 }
 
 .first-menu__scroll-btn svg:hover circle {
@@ -1889,6 +1896,13 @@ body .no-letter-back {
   border: none;
   margin-bottom: 30px;
   cursor: pointer;
+  -webkit-transition: all 1.5s linear;
+  transition: all 1.5s linear;
+}
+
+.contact__button:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 .contact-caption {
@@ -2036,6 +2050,14 @@ body .no-letter-back {
 .publications-page__btn-articles {
   background: none;
   border: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.publications-page__btn-articles:hover {
+  border: 2px #ffffff dashed;
+  padding: 7px 30px;
 }
 
 .publications-page__positions-bnt {
@@ -2051,6 +2073,18 @@ body .no-letter-back {
   border-radius: 12px;
   border: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.publications-page__item:hover {
+  border-radius: 34px;
+  -webkit-box-shadow: 0px 0px 20px #5aade8;
+          box-shadow: 0px 0px 20px #5aade8;
+  background: #0c90ee;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  font-size: 17px;
 }
 
 .img-last-tablet {
