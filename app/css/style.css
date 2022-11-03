@@ -37,6 +37,10 @@
   padding: 0 30px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container-less {
   max-width: 1080px;
   min-width: 375px;
@@ -184,10 +188,6 @@
 
 .fb:hover path {
   fill: #f0145a;
-}
-
-.link {
-  text-decoration: none;
 }
 
 .link-lang {
@@ -1125,8 +1125,8 @@
 }
 
 .services__caption {
-  padding-bottom: 15px;
-  padding-top: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 .services__text {
@@ -2161,6 +2161,133 @@ body .no-letter-back {
   }
   .pos-desk {
     padding-top: 30px;
+  }
+}
+
+.team {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.team__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 315px;
+  height: 300px;
+  border-radius: 12px;
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 15px;
+}
+
+.team__name-person {
+  padding-bottom: 5px;
+  grid-row: 2;
+  white-space: nowrap;
+  grid-column: 1;
+}
+
+.team__card {
+  padding-top: 30px;
+}
+
+.team__text-around {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, -webkit-max-content);
+  grid-template-rows: repeat(3, max-content);
+}
+
+.team__post {
+  grid-row: 3;
+  grid-column: 1;
+  white-space: nowrap;
+}
+
+.team__arrow {
+  margin-left: auto;
+  border: none;
+  background: none;
+  cursor: pointer;
+  grid-row: 2/-1;
+  grid-column: 1;
+  padding: 0;
+  height: 32px;
+}
+
+.team__arrow svg:hover path {
+  stroke: #f0145a;
+}
+
+.team__arrow svg:hover circle {
+  fill: #ededf7;
+}
+
+.text-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+
+.text-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b3b3ba;
+}
+
+@media (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+  }
+  .team__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team__img {
+    width: 294px;
+    height: 400px;
+  }
+  .team__card {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+  }
+  .team__wrap {
+    width: 50%;
+  }
+  .team__caption {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team__wrap {
+    width: 33.333%;
+  }
+  .team__img {
+    width: 261px;
+  }
+  .team__caption {
+    width: 664px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .team__img {
+    width: 400px;
+  }
+  .team__caption {
+    width: 1080px;
+  }
+  .team__text-around {
+    width: 400px;
   }
 }
 

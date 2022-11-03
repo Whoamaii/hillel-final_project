@@ -1,0 +1,117 @@
+.team {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    &__img {
+        object-fit: cover;
+        width: 315px;
+        height: 300px;
+        border-radius: 12px;
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 15px;
+    }
+    &__name-person {
+        padding-bottom: 5px;
+        grid-row: 2;
+        white-space: nowrap;
+        grid-column: 1;
+    }
+    &__card {
+        padding-top: 30px;
+    }
+    &__text-around {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, max-content);
+    }
+    &__post {
+        grid-row: 3;
+        grid-column: 1;
+        white-space: nowrap;
+    }
+    &__arrow {
+        margin-left: auto;
+        border: none;
+        background: none;
+        cursor: pointer;
+        grid-row: 2/-1;
+        grid-column: 1;
+        padding: 0;
+        height: 32px;
+        & svg:hover path {
+            stroke: rgba(240, 20, 90, 1);
+        }
+        & svg:hover circle {
+            fill: #ededf7;
+        }
+    }
+}
+
+.text-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #323264;
+}
+
+.text-position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #b3b3ba;
+}
+
+@media (min-width: 768px) {
+    .team {
+        padding-top: 60px;
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__img {
+            width: 294px;
+            height: 400px;
+        }
+        &__card {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 60px;
+        }
+        &__wrap {
+            width: 50%;
+        }
+        &__caption {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .team {
+        &__wrap {
+            width: 33.333%;
+        }
+        &__img {
+            width: 261px;
+        }
+        &__caption {
+            width: 664px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .team {
+        &__img {
+            width: 400px;
+        }
+        &__caption {
+            width: 1080px;
+        }
+        &__text-around {
+            width: 400px;
+        }
+    }
+}
